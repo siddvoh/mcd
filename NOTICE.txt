@@ -1,0 +1,43 @@
+Third-party material in this repository
+
+The MIT license in LICENSE covers the code. It does not cover the dataset
+material below, which keeps its own terms. The only source pixels included are
+the 64 ChestX-ray14 radiographs, and no rendered images are included. The
+answers in data/answers.csv were produced by the models named in
+data/plan.json.
+
+BBBC039v1, Broad Bioimage Benchmark Collection
+  License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+  Source: https://bbbc.broadinstitute.org/BBBC039/
+  Included: image identifiers, image sizes, the number of pixels above 255 in
+  each image, and nucleus counts derived from the ground-truth masks, in
+  data/items/bbbc200.csv.
+  Cite: Caicedo et al., BBBC039v1: Nuclei of U2OS cells in a chemical screen
+  (2018); Ljosa et al., Nature Methods 9:637 (2012); Caicedo et al.,
+  Cytometry A 95(9):952-965 (2019).
+
+SLAKE, Liu et al., ISBI 2021
+  License of the annotations: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+  Source: https://huggingface.co/datasets/BoKelvin/SLAKE (test split, English
+  closed questions); project page https://www.med-vqa.com/slake/
+  Included: 50 questions with their answers and modality labels, in
+  data/items/slake50.csv. Changes: a 50-question subset was selected, and the
+  prompts in data/plan.json append a reply format to each question.
+  Not included: SLAKE images, which come from upstream collections with their
+  own terms.
+  Cite: Liu et al., SLAKE: A semantically-labeled knowledge-enhanced dataset
+  for medical visual question answering, ISBI 2021, 1650-1654.
+
+NIH ChestX-ray14, NIH Clinical Center
+  Terms: no restriction on use; NIH requires a link to the original download,
+  citation of Wang et al. (2017) and acknowledgment of the NIH Clinical Center
+  as the data provider.
+  Source: https://nihcc.app.box.com/v/ChestXray-NIHCC, read through the
+  Hugging Face mirror BahaaEldin0/NIH-Chest-Xray-14
+  Included: the 64 radiographs used, as PNG files in data/raw/chestxray14/images,
+  with local image identifiers, NIH image file names and yes/no answers derived
+  from the NIH labels in data/items/chest64.csv. The questions were written for
+  this study. The opacity questions use the NIH Effusion label.
+  Cite: Wang et al., ChestX-ray8: Hospital-scale chest X-ray database and
+  benchmarks on weakly-supervised classification and localization of common
+  thorax diseases, CVPR 2017, 3462-3471.

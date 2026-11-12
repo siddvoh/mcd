@@ -1,0 +1,149 @@
+{
+  "models": {
+    "gpt_5_4_or": {
+      "id": "openai/gpt-5.4",
+      "provider": "openai"
+    },
+    "gemini_3_1_pro_or": {
+      "id": "google/gemini-3.1-pro-preview",
+      "provider": "google-ai-studio"
+    },
+    "claude_sonnet_4_6_or": {
+      "id": "anthropic/claude-sonnet-4.6",
+      "provider": "anthropic"
+    },
+    "qwen3_vl_235b_or": {
+      "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "provider": "novita"
+    }
+  },
+  "cells": [
+    {
+      "name": "chest64_multirepeat",
+      "dataset": "chestxray14",
+      "items": "chest64.csv",
+      "maps": [
+        "gray",
+        "viridis",
+        "plasma",
+        "inferno",
+        "magma",
+        "cividis"
+      ],
+      "repeats": 3,
+      "arm": "raw"
+    },
+    {
+      "name": "chest64_same_gray",
+      "dataset": "chestxray14",
+      "items": "chest64.csv",
+      "maps": [
+        "gray"
+      ],
+      "repeats": 6,
+      "arm": "raw"
+    },
+    {
+      "name": "chest64_reminder",
+      "dataset": "chestxray14",
+      "items": "chest64.csv",
+      "maps": [
+        "gray",
+        "viridis",
+        "plasma",
+        "inferno",
+        "magma",
+        "cividis"
+      ],
+      "repeats": 1,
+      "arm": "reminder"
+    },
+    {
+      "name": "slake50_raw",
+      "dataset": "slake",
+      "items": "slake50.csv",
+      "maps": [
+        "gray",
+        "viridis",
+        "plasma",
+        "inferno",
+        "magma",
+        "cividis"
+      ],
+      "repeats": 1,
+      "arm": "raw"
+    },
+    {
+      "name": "slake50_same_gray",
+      "dataset": "slake",
+      "items": "slake50.csv",
+      "maps": [
+        "gray"
+      ],
+      "repeats": 6,
+      "arm": "raw"
+    },
+    {
+      "name": "slake50_reminder",
+      "dataset": "slake",
+      "items": "slake50.csv",
+      "maps": [
+        "gray",
+        "viridis",
+        "plasma",
+        "inferno",
+        "magma",
+        "cividis"
+      ],
+      "repeats": 1,
+      "arm": "reminder"
+    },
+    {
+      "name": "bbbc200_raw",
+      "dataset": "bbbc039",
+      "items": "bbbc200.csv",
+      "maps": [
+        "gray",
+        "viridis",
+        "plasma",
+        "inferno",
+        "magma",
+        "cividis"
+      ],
+      "repeats": 1,
+      "arm": "raw"
+    },
+    {
+      "name": "bbbc200_same_gray",
+      "dataset": "bbbc039",
+      "items": "bbbc200.csv",
+      "maps": [
+        "gray"
+      ],
+      "repeats": 6,
+      "arm": "raw"
+    }
+  ],
+  "settings": {
+    "temperature": 1.0,
+    "reasoning_effort": "low",
+    "max_tokens": 4096,
+    "image_long_edge_px": 1024
+  },
+  "schedule_seed": 3528,
+  "prompts": {
+    "chestxray14": {
+      "system": "You are evaluating a chest X-ray.\nAnswer the question using only visually observable evidence in the image.\nIgnore the colormap or hue; only anatomy, structure, texture, and relative\nintensity patterns matter.\nIf the answer is not visually decidable, abstain.\nDo not use Markdown code fences or include text outside the JSON object.\nReturn JSON only:\n{\"task\":\"medical_qa\",\"answer\":\"yes|no|unknown\",\"abstain\":boolean,\"confidence\":number}\n",
+      "user": "{question}\nReply with JSON of the form\n{\"task\":\"medical_qa\",\"answer\":\"yes|no|unknown\",\"abstain\":boolean,\"confidence\":number}.\n"
+    },
+    "slake": {
+      "system": "You are evaluating a medical image.\nAnswer the question using only visually observable evidence in the image.\nIgnore the colormap or hue; only anatomy, structure, texture, and relative\nintensity patterns matter.\nIf the answer is not visually decidable, abstain.\nDo not use Markdown code fences or include text outside the JSON object.\nReturn JSON only:\n{\"task\":\"medical_qa\",\"answer\":\"yes|no|heart|lung|unknown\",\"abstain\":boolean,\"confidence\":number}\n",
+      "user": "{question}\nReply with JSON of the form\n{\"task\":\"medical_qa\",\"answer\":\"yes|no|heart|lung|unknown\",\"abstain\":boolean,\"confidence\":number}.\n"
+    },
+    "bbbc039": {
+      "system": "You are evaluating a scientific image.\nCount the number of cell nuclei visible in the image.\nIgnore the colormap or hue; only spatial structure, boundaries, and\nrelative intensities matter.\nDo not use Markdown code fences or include text outside the JSON object.\nReturn JSON only with this schema:\n{\"task\":\"count\",\"count\":integer,\"abstain\":boolean,\"confidence\":number}\nIf the image quality is too poor to count reliably, set abstain=true.\nDo not include any extra text.\n",
+      "user": "Count the nuclei in this image and reply with JSON of the form\n{\"task\":\"count\",\"count\":integer,\"abstain\":boolean,\"confidence\":number}.\n"
+    },
+    "reminder": "The image may be pseudocolored arbitrarily; treat the chosen colormap as presentation only and not as evidence."
+  }
+}

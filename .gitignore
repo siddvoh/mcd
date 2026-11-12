@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+.env
+.DS_Store
+data/raw/microscopy/
+data/raw/slake/
+runs/

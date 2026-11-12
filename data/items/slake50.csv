@@ -1,0 +1,51 @@
+item_id,image_id,image_path,modality,question,answer
+102::row0000::qf6955f904b5e,102,data/raw/slake/images/102.jpg,CT,Does the picture contain liver?,No
+102::row0001::q382d4d8fe4d6,102,data/raw/slake/images/102.jpg,CT,Does the picture contain lung?,Yes
+102::row0002::qb5aec98b977e,102,data/raw/slake/images/102.jpg,CT,Does the picture contain heart?,No
+102::row0003::q3c6c156299d1,102,data/raw/slake/images/102.jpg,CT,Is the lung healthy?,No
+102::row0004::qb2738e5cbeed,102,data/raw/slake/images/102.jpg,CT,"Which is the biggest in this image,lung,liver or heart?",Lung
+103::row0005::qf6955f904b5e,103,data/raw/slake/images/103.jpg,CT,Does the picture contain liver?,No
+103::row0006::q382d4d8fe4d6,103,data/raw/slake/images/103.jpg,CT,Does the picture contain lung?,Yes
+103::row0007::q3c6c156299d1,103,data/raw/slake/images/103.jpg,CT,Is the lung healthy?,No
+103::row0008::qb2738e5cbeed,103,data/raw/slake/images/103.jpg,CT,"Which is the biggest in this image,lung,liver or heart?",Lung
+105::row0009::qf6955f904b5e,105,data/raw/slake/images/105.jpg,CT,Does the picture contain liver?,No
+105::row0010::q382d4d8fe4d6,105,data/raw/slake/images/105.jpg,CT,Does the picture contain lung?,Yes
+105::row0011::qb5aec98b977e,105,data/raw/slake/images/105.jpg,CT,Does the picture contain heart?,No
+105::row0012::q3c6c156299d1,105,data/raw/slake/images/105.jpg,CT,Is the lung healthy?,No
+208::row0013::qf6955f904b5e,208,data/raw/slake/images/208.jpg,CT,Does the picture contain liver?,Yes
+208::row0014::qcb4fe832eb16,208,data/raw/slake/images/208.jpg,CT,Does the picture contain kidney?,Yes
+208::row0015::q7506390da6f4,208,data/raw/slake/images/208.jpg,CT,Does the picture contain spleen?,No
+208::row0016::q382d4d8fe4d6,208,data/raw/slake/images/208.jpg,CT,Does the picture contain lung?,No
+13::row0017::q6aaf530e23fb,13,data/raw/slake/images/13.jpg,MRI,Is there any abnormality in the spleen?,No
+13::row0018::q9bcd2f706bdb,13,data/raw/slake/images/13.jpg,MRI,Does the liver look normal?,Yes
+13::row0019::qf6955f904b5e,13,data/raw/slake/images/13.jpg,MRI,Does the picture contain liver?,Yes
+13::row0020::qcb4fe832eb16,13,data/raw/slake/images/13.jpg,MRI,Does the picture contain kidney?,No
+13::row0021::q7506390da6f4,13,data/raw/slake/images/13.jpg,MRI,Does the picture contain spleen?,Yes
+18::row0022::qf6955f904b5e,18,data/raw/slake/images/18.jpg,MRI,Does the picture contain liver?,Yes
+18::row0023::qcb4fe832eb16,18,data/raw/slake/images/18.jpg,MRI,Does the picture contain kidney?,Yes
+18::row0024::q7506390da6f4,18,data/raw/slake/images/18.jpg,MRI,Does the picture contain spleen?,Yes
+18::row0025::q88575fcdbc66,18,data/raw/slake/images/18.jpg,MRI,Does the liver look normal ?,Yes
+18::row0026::q9a5a01b2d3d2,18,data/raw/slake/images/18.jpg,MRI,Does the kidney look abnormal?,No
+18::row0027::q257f7960fd29,18,data/raw/slake/images/18.jpg,MRI,Do the spleen look abnormal?,No
+24::row0028::qf6955f904b5e,24,data/raw/slake/images/24.jpg,MRI,Does the picture contain liver?,Yes
+24::row0029::qcb4fe832eb16,24,data/raw/slake/images/24.jpg,MRI,Does the picture contain kidney?,No
+24::row0030::q7506390da6f4,24,data/raw/slake/images/24.jpg,MRI,Does the picture contain spleen?,Yes
+25::row0031::qf6955f904b5e,25,data/raw/slake/images/25.jpg,MRI,Does the picture contain liver?,No
+25::row0032::qcb4fe832eb16,25,data/raw/slake/images/25.jpg,MRI,Does the picture contain kidney?,No
+25::row0033::q7506390da6f4,25,data/raw/slake/images/25.jpg,MRI,Does the picture contain spleen?,No
+124::row0034::qd416b44d963c,124,data/raw/slake/images/124.jpg,X-Ray,Are there abnormalities in this image?,Yes
+124::row0035::qa8c7499db6dc,124,data/raw/slake/images/124.jpg,X-Ray,"Which organ is abnormal, heart or lung?",Heart
+130::row0036::qd416b44d963c,130,data/raw/slake/images/130.jpg,X-Ray,Are there abnormalities in this image?,Yes
+130::row0037::q35483b8c856c,130,data/raw/slake/images/130.jpg,X-Ray,Does the lung look healthy?,No
+135::row0038::qd416b44d963c,135,data/raw/slake/images/135.jpg,X-Ray,Are there abnormalities in this image?,Yes
+135::row0039::qa8c7499db6dc,135,data/raw/slake/images/135.jpg,X-Ray,"Which organ is abnormal, heart or lung?",Heart
+142::row0040::qd416b44d963c,142,data/raw/slake/images/142.jpg,X-Ray,Are there abnormalities in this image?,Yes
+142::row0041::qa8c7499db6dc,142,data/raw/slake/images/142.jpg,X-Ray,"Which organ is abnormal, heart or lung?",Heart
+147::row0042::qd416b44d963c,147,data/raw/slake/images/147.jpg,X-Ray,Are there abnormalities in this image?,Yes
+147::row0043::q3c6c156299d1,147,data/raw/slake/images/147.jpg,X-Ray,Is the lung healthy?,No
+147::row0044::qa8c7499db6dc,147,data/raw/slake/images/147.jpg,X-Ray,"Which organ is abnormal, heart or lung?",Lung
+148::row0045::qd416b44d963c,148,data/raw/slake/images/148.jpg,X-Ray,Are there abnormalities in this image?,Yes
+148::row0046::qa8c7499db6dc,148,data/raw/slake/images/148.jpg,X-Ray,"Which organ is abnormal, heart or lung?",Heart
+152::row0047::qd416b44d963c,152,data/raw/slake/images/152.jpg,X-Ray,Are there abnormalities in this image?,Yes
+152::row0048::qa8c7499db6dc,152,data/raw/slake/images/152.jpg,X-Ray,"Which organ is abnormal, heart or lung?",Heart
+159::row0049::qd50d3ca7297d,159,data/raw/slake/images/159.jpg,X-Ray,Does this image look normal?,No
