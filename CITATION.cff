@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Mutual Colormap Dependence: code and data"
+authors:
+  - family-names: Vohra
+    given-names: Siddharth
+    affiliation: Carnegie Mellon University
+  - family-names: Jiang
+    given-names: Runmin
+    affiliation: Carnegie Mellon University
+  - family-names: Xu
+    given-names: Min
+    affiliation: Carnegie Mellon University
+license: MIT
+url: "https://siddvoh.com/mutual-colormap-dependence/"
+repository-code: "https://github.com/siddvoh/mcd"
+preferred-citation:
+  type: conference-paper
+  title: "Mutual Colormap Dependence: How Recoloring Biomedical Images Changes Vision-Language Model Answers"
+  authors:
+    - family-names: Vohra
+      given-names: Siddharth
+    - family-names: Jiang
+      given-names: Runmin
+    - family-names: Xu
+      given-names: Min
+  collection-title: "Workshop on Foundation AI for Biomedical Reasoning, Imaging, and Cognition (FABRIC) at WACV 2027"
+  conference:
+    name: "Workshop on Foundation AI for Biomedical Reasoning, Imaging, and Cognition (FABRIC), at WACV 2027"
+    city: Orlando
+    region: Florida
+    country: US
+  year: 2027
+  notes: "To appear"
+  url: "https://siddvoh.com/mutual-colormap-dependence/"
